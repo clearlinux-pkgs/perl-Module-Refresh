@@ -4,7 +4,7 @@
 #
 Name     : perl-Module-Refresh
 Version  : 0.17
-Release  : 1
+Release  : 2
 URL      : https://cpan.metacpan.org/authors/id/A/AL/ALEXMV/Module-Refresh-0.17.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/A/AL/ALEXMV/Module-Refresh-0.17.tar.gz
 Summary  : 'Refresh %INC files when updated on disk'
@@ -82,4 +82,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.2/Module/Refresh.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Module/Refresh.pm
