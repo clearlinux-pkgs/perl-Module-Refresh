@@ -4,18 +4,38 @@
 #
 Name     : perl-Module-Refresh
 Version  : 0.17
-Release  : 11
+Release  : 12
 URL      : https://cpan.metacpan.org/authors/id/A/AL/ALEXMV/Module-Refresh-0.17.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/A/AL/ALEXMV/Module-Refresh-0.17.tar.gz
 Summary  : 'Refresh %INC files when updated on disk'
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
+Requires: perl-Module-Refresh-perl = %{version}-%{release}
 BuildRequires : buildreq-cpan
 BuildRequires : perl(Module::Install)
 BuildRequires : perl(Path::Class)
 
 %description
 No detailed description available
+
+%package dev
+Summary: dev components for the perl-Module-Refresh package.
+Group: Development
+Provides: perl-Module-Refresh-devel = %{version}-%{release}
+Requires: perl-Module-Refresh = %{version}-%{release}
+
+%description dev
+dev components for the perl-Module-Refresh package.
+
+
+%package perl
+Summary: perl components for the perl-Module-Refresh package.
+Group: Default
+Requires: perl-Module-Refresh = %{version}-%{release}
+
+%description perl
+perl components for the perl-Module-Refresh package.
+
 
 %prep
 %setup -q -n Module-Refresh-0.17
@@ -55,3 +75,11 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
+
+%files dev
+%defattr(-,root,root,-)
+/usr/share/man/man3/Module::Refresh.3
+
+%files perl
+%defattr(-,root,root,-)
+/usr/lib/perl5/vendor_perl/5.34.0/Module/Refresh.pm
