@@ -4,7 +4,7 @@
 #
 Name     : perl-Module-Refresh
 Version  : 0.17
-Release  : 8
+Release  : 9
 URL      : https://cpan.metacpan.org/authors/id/A/AL/ALEXMV/Module-Refresh-0.17.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/A/AL/ALEXMV/Module-Refresh-0.17.tar.gz
 Summary  : 'Refresh %INC files when updated on disk'
