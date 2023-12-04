@@ -4,7 +4,7 @@
 #
 Name     : perl-Module-Refresh
 Version  : 0.18
-Release  : 17
+Release  : 18
 URL      : https://cpan.metacpan.org/authors/id/B/BP/BPS/Module-Refresh-0.18.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/B/BP/BPS/Module-Refresh-0.18.tar.gz
 Summary  : 'Refresh %INC files when updated on disk'
